@@ -1,17 +1,44 @@
-*, ::after, ::before { box-sizing: border-box; }
+*,
+ ::after,
+ ::before {
+    box-sizing: border-box;
+}
 
 body {
-	font-family: sans-serif;
+    font-family: sans-serif;
 }
-
 
 .blok {
-	padding: 20px;
+    padding: 20px;
 }
 
-.levy  { background-color: #f1c40f;}
-.horni { background-color: #2ecc71;}
-.dolni { background-color: #e74c3c;}
+.levy {
+    background-color: #f1c40f;
+}
+
+.horni {
+    background-color: #2ecc71;
+}
+
+.dolni {
+    background-color: #e74c3c;
+}
+
 
 /* ------------- pod čáru přijdou tvé styly ------------- */
 
+.kontejner {
+    display: flex;
+}
+
+.pravy {
+    display: flex;
+    flex-direction: column;
+}
+
+.horni,
+.dolni,
+.pravy,
+.levy {
+    flex-basis: 50%;
+}
